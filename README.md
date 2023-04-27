@@ -1,4 +1,4 @@
-[We will follow this getting started page](https://hardhat.org/hardhat-runner/docs/getting-started#overview)
+[We will follow this website](https://hardhat.org/hardhat-runner/docs/getting-started#overview)
 
 Create a Project Directory
 
