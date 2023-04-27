@@ -1,33 +1,4 @@
-We will follow this getting started page<br>
-Create a Project Directory<br>
-Follow these steps<br>
-npm install --save-dev hardhat<br>
-npx hardhat<br>
-What do you want to do? · Create a TypeScript project<br>
-√ Hardhat project root: · E:\document\web 3 and metaverse\military academy\hardhat<br>
-√ Do you want to add a .gitignore? (Y/n) · y<br>
-√ Help us improve Hardhat with anonymous crash reports & basic usage data? (Y/n) · y<br>
-You need to install these dependencies to run the sample project:<br>
-npm install --save-dev "hardhat@^2.14.0" "@nomicfoundation/hardhat-toolbox@^2.0.0"<br>
-if you get following error:<br>
-npm ERR! code ERR_SOCKET_TIMEOUT<br>
-write following commands:<br>
-- npm config rm proxy<br>
-- npm config rm https-proxy<br>
-
-Select to create a basic project from the menu
-npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers
-npx hardhat compile
-npx hardhat test
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
-You can run it using npx hardhat run:
-$ npx hardhat run scripts/deploy.ts
-Lock with 1 ETH deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3
-
-Connecting a wallet or Dapp to Hardhat Network
-To run Hardhat Network in this way, run npx hardhat node:
-$ npx hardhat node
-Started HTTP and WebSocket JSON-RPC server at http://127.0.0.1:8545/
+# Sample Hardhat Project
 
 This will expose a JSON-RPC interface to Hardhat Network. To use it connect your wallet or application to http://127.0.0.1:8545.
 If you want to connect Hardhat to this node, for example to run a deployment script against it, you simply need to run it using --network localhost.
@@ -43,9 +14,5 @@ npx hardhat compile
 npx hardhat clean
 npx hardhat test
 npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-
-
-
-
+npx hardhat run scripts/deploy.ts
+```
