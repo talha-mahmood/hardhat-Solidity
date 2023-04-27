@@ -1,4 +1,4 @@
-We will follow this getting started page
+[We will follow this getting started page]
 
 Create a Project Directory
 
