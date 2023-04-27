@@ -1,24 +1,35 @@
-import { ethers } from "hardhat";
+import { run, ethers } from "hardhat";
 
 async function main() {
-  const currentTimestampInSeconds = Math.round(Date.now() / 1000);
-  const unlockTime = currentTimestampInSeconds + 60;
 
-  const lockedAmount = ethers.utils.parseEther("0.001");
+  // const Lock = await ethers.getContractFactory("Lock");
 
+  // const lock = await Lock.deploy("Hello, Hardhat!");
+
+  // await lock.deployed();
   const Lock = await ethers.getContractFactory("Lock");
-  const lock = await Lock.deploy(unlockTime, { value: lockedAmount });
+  
+  // Convert the string value to a bytes32 value
+  const value = ethers.utils.formatBytes32String("Hello, Hardhat!");
+
+
+
+
+  // // Convert the string value to a BigNumber
+  // const value = ethers.BigNumber.from("Hello, Hardhat!");
+
+  const lock = await Lock.deploy(value);
 
   await lock.deployed();
 
-  console.log(
-    `Lock with ${ethers.utils.formatEther(lockedAmount)}ETH and unlock timestamp ${unlockTime} deployed to ${lock.address}`
-  );
+  console.log("Lock deployed to:", lock.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+main()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
