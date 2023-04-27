@@ -1,5 +1,6 @@
 
 We will follow this getting started page
+
 Create a Project Directory
 Follow these steps
 npm install --save-dev hardhat
