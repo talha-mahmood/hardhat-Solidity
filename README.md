@@ -1,10 +1,17 @@
 We will follow this getting started page
+
 Create a Project Directory
+
 Follow these steps
+
 npm install --save-dev hardhat
+
 npx hardhat
+
 What do you want to do? · Create a TypeScript project
+
 √ Hardhat project root: · E:\document\web 3 and metaverse\military academy\hardhat
+
 √ Do you want to add a .gitignore? (Y/n) · y
 √ Help us improve Hardhat with anonymous crash reports & basic usage data? (Y/n) · y
 
